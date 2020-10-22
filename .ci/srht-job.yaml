@@ -1,0 +1,18 @@
+image: nixos/unstable
+sources:
+  - git@github.com:cole-h/flake-alacritty
+secrets:
+  - 881d735e-abbb-4ad4-98b9-60b876b2c08e # cachix.dhall
+  - 4eb572e0-2852-4521-ab4b-d3e6c568c126 # id_ed25519
+environment:
+  CI_BUILD: "sr.ht"
+tasks:
+  - prep: |
+      cd flake-alacritty
+      nix-shell --pure --command "./.ci/prep.sh"
+  - update: |
+      cd flake-alacritty
+      nix-shell --pure --command "./update.sh"
+  - push: |
+      cd flake-alacritty
+      nix-shell --pure --command "./.ci/push.sh"

@@ -1,0 +1,58 @@
+{
+  description = "firefox-nightly";
+
+  # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
+  inputs = {
+    nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
+    naersk = { url = "github:nmattia/naersk"; };
+
+    alacritty = { url = "github:alacritty/alacritty"; flake = false; };
+  };
+
+  outputs = { naersk, alacritty, ... } @ inputs:
+    let
+      nameValuePair = name: value: { inherit name value; };
+      genAttrs = names: f: builtins.listToAttrs (map (n: nameValuePair n (f n)) names);
+      forAllSystems = genAttrs [ "x86_64-linux" "i686-linux" "aarch64-linux" ];
+
+      pkgsFor = pkgs: system:
+        import pkgs {
+          inherit system;
+        };
+    in
+    {
+      packages = forAllSystems (system:
+        let
+          nixpkgs_ = (pkgsFor inputs.nixpkgs system);
+          naerskLib = nixpkgs_.callPackage naersk { };
+        in
+        {
+          alacritty = nixpkgs_.callPackage ./alacritty.nix {
+            inherit (naerskLib) buildPackage;
+            src = alacritty;
+            version = alacritty.shortRev;
+          };
+        }
+      );
+
+      inherit inputs;
+
+      defaultPackage = forAllSystems (system:
+        inputs.self.packages.${system}.alacritty);
+
+      devShell = forAllSystems (system:
+        let
+          nixpkgs_ = pkgsFor inputs.nixpkgs system;
+        in
+        nixpkgs_.mkShell {
+          buildInputs = with nixpkgs_; [
+            cachix
+            openssh
+            git
+            jq
+            nixUnstable
+            cacert
+          ];
+        });
+    };
+}
