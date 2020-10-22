@@ -3,17 +3,16 @@
     "alacritty": {
       "flake": false,
       "locked": {
-        "lastModified": 1602946071,
-        "narHash": "sha256-lP9QS34YqUhC7jgwPrOkZkFScQO7GlaDKmwBpAcQnY0=",
+        "lastModified": 1603395578,
+        "narHash": "sha256-u32EdCWhzaKQcBfB9yZNqOlOUpEn0Xegj9sbepyNtOQ=",
         "owner": "alacritty",
         "repo": "alacritty",
-        "rev": "21eb84fc5e0e649f53e3785957fa127ee9a78688",
+        "rev": "f33a44e1c4e3d25a5f7fec15fc843b7380ed76d1",
         "type": "github"
       },
       "original": {
         "owner": "alacritty",
         "repo": "alacritty",
-        "rev": "21eb84fc5e0e649f53e3785957fa127ee9a78688",
         "type": "github"
       }
     },
@@ -37,11 +36,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1603392469,
-        "narHash": "sha256-Z2hRz3Te6wKyOi1XQABAECd99Gn4Q8D0YLQbfdlmEyE=",
+        "lastModified": 1603393974,
+        "narHash": "sha256-EXHbaPVTzQus79N9+81GS1u3eLvooho/LCJf1JLVgBc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "78ff7e0a7a2603fa67546d692d87459674b39b8d",
+        "rev": "4cada0cd315b1cf0c65815e5250ff308ed5c69e0",
         "type": "github"
       },
       "original": {
