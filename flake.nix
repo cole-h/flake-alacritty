@@ -1,7 +1,6 @@
 {
-  description = "firefox-nightly";
+  description = "alacritty";
 
-  # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     naersk = { url = "github:nmattia/naersk"; };
@@ -21,6 +20,8 @@
         };
     in
     {
+      inherit inputs;
+
       packages = forAllSystems (system:
         let
           nixpkgs_ = (pkgsFor inputs.nixpkgs system);
@@ -35,8 +36,6 @@
         }
       );
 
-      inherit inputs;
-
       defaultPackage = forAllSystems (system:
         inputs.self.packages.${system}.alacritty);
 
@@ -46,12 +45,12 @@
         in
         nixpkgs_.mkShell {
           buildInputs = with nixpkgs_; [
+            cacert
             cachix
-            openssh
             git
             jq
             nixUnstable
-            cacert
+            openssh
           ];
         });
     };
