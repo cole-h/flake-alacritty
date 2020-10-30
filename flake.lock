@@ -3,11 +3,11 @@
     "alacritty": {
       "flake": false,
       "locked": {
-        "lastModified": 1603945053,
-        "narHash": "sha256-rpkqUy0PdCjvFQhDx0BfK+6p07JevAmra/61c55PobM=",
+        "lastModified": 1604009683,
+        "narHash": "sha256-Rm8Qe1lZ2i5OxBe5WkDI6GyEiz3lMSOWEx7+7V2Shtc=",
         "owner": "alacritty",
         "repo": "alacritty",
-        "rev": "a99a9fd84ce5f7c3e79d172fc140fcdc0ffa47c9",
+        "rev": "bede5d5d1c19da32a0b7fd0cb4ab9e369aa94eb8",
         "type": "github"
       },
       "original": {
@@ -36,11 +36,12 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1603153815,
-        "narHash": "sha256-uCav0CJ0Zm0vbqJiS9NUYD4XZg4Ww9bbsFzcDUzh2+U=",
-        "path": "/nix/store/1gw4hczsp0ir5xs0n8sddda3vzsn902r-source",
-        "rev": "007126eef72271480cb7670e19e501a1ad2c1ff2",
-        "type": "path"
+        "lastModified": 1604028445,
+        "narHash": "sha256-/bsLcTzlbGxFIOjjRDcp94Uz1wHLC882YrUp1n2JlL4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "afbd4e7b7011aa01548bf92cfd5d3d3a982e0c38",
+        "type": "github"
       },
       "original": {
         "id": "nixpkgs",
