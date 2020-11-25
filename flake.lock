@@ -3,11 +3,11 @@
     "alacritty": {
       "flake": false,
       "locked": {
-        "lastModified": 1606180333,
-        "narHash": "sha256-YnboPG3knQdtc81AfhBJlPwAq9yks9oLfmiNmkUfkzI=",
+        "lastModified": 1606267881,
+        "narHash": "sha256-f+jos5+4x8DdLquMUG61Ft2A3quV5AeX8xVBYx7YUW4=",
         "owner": "alacritty",
         "repo": "alacritty",
-        "rev": "9e6e35ffd7ecbb32efba60cdc03550afa2a8e60d",
+        "rev": "26479bb9f5c42e3294204c2923a67f3185dd061c",
         "type": "github"
       },
       "original": {
@@ -36,11 +36,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1606204715,
-        "narHash": "sha256-WqPcTLT94kGUL49qGz/jQcuuxjuDsuYxj5r2ViXFtPM=",
+        "lastModified": 1606327690,
+        "narHash": "sha256-K3ojgZwMR8bt4OM18Igtuf7SWJSx6uKGmGOZuKD+yRk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "58f29d3ca8a64e1ff98f63797a3a32584dd5d54b",
+        "rev": "e204319c740020330cd657c352d7f29b3d432f5a",
         "type": "github"
       },
       "original": {
