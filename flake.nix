@@ -26,11 +26,16 @@
         let
           nixpkgs_ = (pkgsFor inputs.nixpkgs system);
           naerskLib = nixpkgs_.callPackage naersk { };
+          alac = nixpkgs_.applyPatches {
+            name = "alacritty-patched";
+            src = alacritty;
+            patches = [ ./vte-rev.diff ];
+          };
         in
         {
           alacritty = nixpkgs_.callPackage ./alacritty.nix {
             inherit (naerskLib) buildPackage;
-            src = alacritty;
+            src = alac;
             version = alacritty.shortRev;
           };
         }
