@@ -3,7 +3,8 @@
 
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    naersk = { url = "github:nmattia/naersk"; };
+    # naersk = { url = "github:nmattia/naersk"; };
+    naersk = { url = "github:cole-h/naersk/support-int"; };
 
     alacritty = { url = "github:alacritty/alacritty"; flake = false; };
   };

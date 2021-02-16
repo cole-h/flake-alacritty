@@ -3,11 +3,11 @@
     "alacritty": {
       "flake": false,
       "locked": {
-        "lastModified": 1611960075,
-        "narHash": "sha256-35WyPmlwkoTzR+xTEZ724QG/S+Fe04mq/oGK5WrGynU=",
+        "lastModified": 1613401092,
+        "narHash": "sha256-8qinfzHf/SVpg2aaJ0LlK2/JHaRm/FhNGrgGYTpQDFg=",
         "owner": "alacritty",
         "repo": "alacritty",
-        "rev": "73759da0f52f7186181f7284a4c9cb9db0798d59",
+        "rev": "fc87aaa4b10b9a5949fa2eae9e33ef66949b70d3",
         "type": "github"
       },
       "original": {
@@ -21,27 +21,27 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1611671864,
-        "narHash": "sha256-dufXzwMM8q0zkqSsfK2pvBNBmA8AJbaPkZkDYVCUXsI=",
-        "owner": "nmattia",
+        "lastModified": 1613514262,
+        "narHash": "sha256-BLBnt3BYsh92qKgqZljckM9s5sZUt30cBQF5b/5pVCU=",
+        "owner": "cole-h",
         "repo": "naersk",
-        "rev": "79129b5c16d299b747b5276afd80b1f325f786ac",
+        "rev": "026bd80c058f8a95dfb81051bbdead045d3e690d",
         "type": "github"
       },
       "original": {
-        "owner": "nmattia",
+        "owner": "cole-h",
+        "ref": "support-int",
         "repo": "naersk",
         "type": "github"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1611986967,
-        "narHash": "sha256-ow1+6fSGOc940PM6RxHY9dalNR+p/JqyYlvx9weGXZI=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "ac98f9973f5c9af5e00c477af9b6d2d1b2ccdd2d",
-        "type": "github"
+        "lastModified": 1612194028,
+        "narHash": "sha256-AFPVC9gNDHnx52FGD1IWRvM3S3D1AgEbEaOkxDerlyU=",
+        "path": "/nix/store/gckn8xb6rpfchkch5fs4fvp0smdj7xc8-source",
+        "rev": "65211f5afcc3637c55423b327157a5eae05dff67",
+        "type": "path"
       },
       "original": {
         "id": "nixpkgs",
@@ -50,11 +50,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1611575689,
-        "narHash": "sha256-z2rNP3zdVnGxp9iV2Rbn0/LLKhk47DZQKxDkpYFLI7M=",
+        "lastModified": 1613226215,
+        "narHash": "sha256-3rA5cGIrBHD6yeKhNhsF7/t461ww25oJY8KyBb0IhjU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "891f607d5301d6730cb1f9dcf3618bcb1ab7f10e",
+        "rev": "ff96a0fa5635770390b184ae74debea75c3fd534",
         "type": "github"
       },
       "original": {

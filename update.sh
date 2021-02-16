@@ -28,7 +28,7 @@ nix --experimental-features 'nix-command' \
 outdir="$(mktemp -d)"
 nix build \
 	--experimental-features 'nix-command flakes' \
-	--option "extra-binary-caches" "https://cache.nixos.org https://alacritty.cachix.org" \
+	--option "binary-caches" "https://cache.nixos.org https://alacritty.cachix.org" \
 	--option "trusted-public-keys" "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= alacritty.cachix.org-1:/qirsw0af1Mf5vshRf3mWVuE/kCB6vZn6tYOkd4nWsU=" \
 	--option "build-cores" "0" \
 	--option "narinfo-cache-negative-ttl" "0" \
