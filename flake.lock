@@ -21,16 +21,15 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1613514262,
+        "lastModified": 1613655351,
         "narHash": "sha256-BLBnt3BYsh92qKgqZljckM9s5sZUt30cBQF5b/5pVCU=",
-        "owner": "cole-h",
+        "owner": "nmattia",
         "repo": "naersk",
-        "rev": "026bd80c058f8a95dfb81051bbdead045d3e690d",
+        "rev": "1a9e5ddc51bc44c1bf872e02fe2702dc40e8af48",
         "type": "github"
       },
       "original": {
-        "owner": "cole-h",
-        "ref": "support-int",
+        "owner": "nmattia",
         "repo": "naersk",
         "type": "github"
       }
