@@ -11,7 +11,7 @@ oldversion="$(cat .rev)"
 rm -rf ./.ci/commit-message
 
 nix --experimental-features 'nix-command flakes' \
-	flake update \
+	flake lock \
 	--update-input nixpkgs \
 	--update-input alacritty \
 	--update-input naersk
